@@ -1,0 +1,32 @@
+//Aim= To demonstrate use of friend function and inline function
+//Function overloading//
+#include<iostream>
+using namespace std;
+class A
+{
+public:
+int length,base;
+float r;
+void area (int length,int base)
+{
+cout<<"area of rectangle:"<<length*base<<endl;
+}
+void area(float r)
+{
+cout<<"area of square:"<<r*r<<endl;
+}
+};
+int main()
+{
+A s;
+int a,b;
+float r;
+cout<<"enter the length:\n";
+cin>>a;
+cout<<"enter the base:\n";
+cin>>b;
+cout<<"enter the radius:\n";
+cin>>r;
+s.area(a,b);
+s.area(r);
+}
